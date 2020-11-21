@@ -1,0 +1,67 @@
+﻿<process name="AddressBookSystem Process" version="1.0" bpversion="6.9.0.26970" narrative="Creating the process for AddressBookSystem" byrefcollection="true" preferredid="eb6740b6-d862-48ea-af90-c9436cf6d235">
+  <view>
+    <camerax>0</camerax>
+    <cameray>0</cameray>
+    <zoom version="2">1.25</zoom>
+  </view>
+  <preconditions />
+  <endpoint narrative="" />
+  <stage stageid="a6cb9589-1103-4876-9783-2010bb121ae5" name="Start" type="Start">
+    <display x="-45" y="-120" />
+    <onsuccess>2d359fe9-306e-49db-b1c7-c662bfd5794f</onsuccess>
+  </stage>
+  <stage stageid="fc060e25-a725-418c-910b-94cd15e4a2cd" name="End" type="End">
+    <display x="-45" y="60" />
+  </stage>
+  <stage stageid="299218a9-2b91-43f4-b3bc-c9d18a12d72f" name="Stage1" type="ProcessInfo">
+    <display x="-195" y="-105" w="150" h="90" />
+  </stage>
+  <stage stageid="2d359fe9-306e-49db-b1c7-c662bfd5794f" name="AddressBookSystem::Set DB Connection" type="Action">
+    <loginhibit onsuccess="true" />
+    <display x="45" y="-120" />
+    <onsuccess>148e5187-a608-42f1-85b7-fbd90728263b</onsuccess>
+    <resource object="AddressBookSystem" action="Set DB Connection" />
+  </stage>
+  <stage stageid="148e5187-a608-42f1-85b7-fbd90728263b" name="AddressBookSystem::Insert Operation" type="Action">
+    <loginhibit onsuccess="true" />
+    <display x="135" y="-120" />
+    <onsuccess>15052282-31de-4d59-b8ef-9f063647bf8d</onsuccess>
+    <resource object="AddressBookSystem" action="Insert Operation" />
+  </stage>
+  <stage stageid="15052282-31de-4d59-b8ef-9f063647bf8d" name="AddressBookSystem::Read Operation" type="Action">
+    <loginhibit onsuccess="true" />
+    <display x="135" y="-60" />
+    <onsuccess>f659dee2-d904-4372-894b-23dfd95d7c9c</onsuccess>
+    <resource object="AddressBookSystem" action="Read Operation" />
+  </stage>
+  <stage stageid="f659dee2-d904-4372-894b-23dfd95d7c9c" name="AddressBookSystem::Update Operation" type="Action">
+    <loginhibit onsuccess="true" />
+    <display x="45" y="-60" />
+    <onsuccess>e972e072-172e-4bfc-a9d3-745ce83a5e32</onsuccess>
+    <resource object="AddressBookSystem" action="Update Operation" />
+  </stage>
+  <stage stageid="e972e072-172e-4bfc-a9d3-745ce83a5e32" name="AddressBookSystem::Delete Operation" type="Action">
+    <loginhibit onsuccess="true" />
+    <display x="45" y="0" />
+    <onsuccess>063dca7a-2768-4f24-9671-4f266ddd2fe8</onsuccess>
+    <resource object="AddressBookSystem" action="Delete Operation" />
+  </stage>
+  <stage stageid="063dca7a-2768-4f24-9671-4f266ddd2fe8" name="AddressBookSystem::Checking Duplicate Records" type="Action">
+    <loginhibit onsuccess="true" />
+    <display x="135" y="0" />
+    <onsuccess>b9531f1b-a3ff-463c-86a6-5dbd4aa0f97b</onsuccess>
+    <resource object="AddressBookSystem" action="Checking Duplicate Records" />
+  </stage>
+  <stage stageid="b9531f1b-a3ff-463c-86a6-5dbd4aa0f97b" name="AddressBookSystem::Retrieve By Name" type="Action">
+    <loginhibit onsuccess="true" />
+    <display x="135" y="60" />
+    <onsuccess>603f89b8-8d34-4ee6-bc24-c65d3c2f8d67</onsuccess>
+    <resource object="AddressBookSystem" action="Retrieve By Name" />
+  </stage>
+  <stage stageid="603f89b8-8d34-4ee6-bc24-c65d3c2f8d67" name="AddressBookSystem::Send Email" type="Action">
+    <loginhibit onsuccess="true" />
+    <display x="45" y="60" />
+    <onsuccess>fc060e25-a725-418c-910b-94cd15e4a2cd</onsuccess>
+    <resource object="AddressBookSystem" action="Send Email" />
+  </stage>
+</process>
